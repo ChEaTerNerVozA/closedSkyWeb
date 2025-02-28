@@ -1,0 +1,43 @@
+.row{
+    display:flex;
+}
+.d-header{
+    background-color: rgba(128, 128, 128, 0);
+    font-size: 23px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+.main-nav .list{
+    list-style-type: none;
+    gap: 20px;
+}
+.main-nav .list a{
+    text-decoration: none;
+}
+.main-nav .list a:hover{
+    text-decoration: underline;
+}
+body {
+    background-image: url("https://images2.alphacoders.com/564/thumb-1920-564835.jpg");
+    background-size: cover;
+  }
+
+  .list a {
+    color: white;
+    text-decoration: none;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.list a:hover {
+    text-shadow: 0 0 10px blue, 0 0 20px blue;
+}
+body {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
